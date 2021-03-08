@@ -8,7 +8,7 @@ pipeline {
      }
       stage ("Create docker image") {
        steps {
-        sh "docker image build -t prasad ."
+        sh "docker build -t prasad ."
       }
      }
   }
