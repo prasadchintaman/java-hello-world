@@ -5,6 +5,10 @@ pipeline {
       steps {
        sh  "mvn clean install"
       }
+      stage ("Create docker image") {
+       steps {
+        sh "docker image build -t mydockerdemo"
+      }
      }
   }
  
