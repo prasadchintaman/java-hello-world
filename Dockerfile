@@ -1,4 +1,4 @@
 FROM java:8-jdk-alpine
-COPY target/java-0.0.1.jar .
+COPY target/demo1-0.0.1-SNAPSHOT.jar .
 EXPOSE 8087
-CMD ["java" , "-jar" , "java-0.0.1.jar"]
+CMD ["java" , "-jar" , "demo1-0.0.1-SNAPSHOT.jar"]
