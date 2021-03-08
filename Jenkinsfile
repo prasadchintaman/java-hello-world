@@ -3,12 +3,12 @@ pipeline {
   stages {
      stage ("mvn Build") {
       steps {
-       sh  "mvn clean install"
+       sh "mvn clean install"
       }
      }
       stage ("Create docker image") {
        steps {
-        sh "docker build -t prasad ."
+        sh "docker build -t myimage ."
       }
      }
   }
